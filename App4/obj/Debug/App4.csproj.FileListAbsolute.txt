@@ -36,4 +36,42 @@ c:\users\victor\documents\visual studio 2017\Projects\App4\App4\obj\Debug\androi
 c:\users\victor\documents\visual studio 2017\Projects\App4\App4\obj\Debug\android\assets\System.Xml.dll.mdb
 c:\users\victor\documents\visual studio 2017\Projects\App4\App4\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\victor\Documents\Visual Studio 2017\Projects\App4\App4\obj\Debug\App4.dll.mdb
-C:\Users\victor\Documents\Visual Studio 2017\Projects\App4\App4\bin\Debug\App4.dll.mdb
+D:\other-projects\App4\App4\bin\Debug\App4.dll
+D:\other-projects\App4\App4\bin\Debug\App4.pdb
+D:\other-projects\App4\App4\bin\Debug\App4.App4.apk
+D:\other-projects\App4\App4\bin\Debug\App4.App4-Signed.apk
+D:\other-projects\App4\App4\obj\Debug\App4.csprojResolveAssemblyReference.cache
+D:\other-projects\App4\App4\obj\Debug\App4.dll
+D:\other-projects\App4\App4\obj\Debug\App4.pdb
+D:\other-projects\App4\App4\obj\Debug\android\bin\App4.App4.apk
+D:\other-projects\App4\App4\obj\Debug\res\layout\main.xml
+D:\other-projects\App4\App4\obj\Debug\res\values\strings.xml
+D:\other-projects\App4\App4\obj\Debug\res\drawable\icon.png
+D:\other-projects\App4\App4\obj\Debug\R.cs.flag
+D:\other-projects\App4\App4\obj\Debug\uploadflags.txt
+D:\other-projects\App4\App4\bin\Debug\App4.dll.mdb
+D:\other-projects\App4\App4\bin\Debug\Java.Interop.dll.mdb
+D:\other-projects\App4\App4\bin\Debug\Mono.Android.dll.mdb
+D:\other-projects\App4\App4\bin\Debug\mscorlib.dll.mdb
+D:\other-projects\App4\App4\bin\Debug\System.ComponentModel.Composition.dll.mdb
+D:\other-projects\App4\App4\bin\Debug\System.Core.dll.mdb
+D:\other-projects\App4\App4\bin\Debug\System.dll.mdb
+D:\other-projects\App4\App4\bin\Debug\System.Net.Http.dll.mdb
+D:\other-projects\App4\App4\bin\Debug\System.Runtime.Serialization.dll.mdb
+D:\other-projects\App4\App4\bin\Debug\System.ServiceModel.Internals.dll.mdb
+D:\other-projects\App4\App4\bin\Debug\System.Xml.dll.mdb
+D:\other-projects\App4\App4\bin\Debug\System.Xml.Linq.dll.mdb
+D:\other-projects\App4\App4\obj\Debug\android\assets\App4.dll.mdb
+D:\other-projects\App4\App4\obj\Debug\android\assets\Java.Interop.dll.mdb
+D:\other-projects\App4\App4\obj\Debug\android\assets\Mono.Android.dll.mdb
+D:\other-projects\App4\App4\obj\Debug\android\assets\mscorlib.dll.mdb
+D:\other-projects\App4\App4\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+D:\other-projects\App4\App4\obj\Debug\android\assets\System.Core.dll.mdb
+D:\other-projects\App4\App4\obj\Debug\android\assets\System.dll.mdb
+D:\other-projects\App4\App4\obj\Debug\android\assets\System.Net.Http.dll.mdb
+D:\other-projects\App4\App4\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+D:\other-projects\App4\App4\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+D:\other-projects\App4\App4\obj\Debug\android\assets\System.Xml.dll.mdb
+D:\other-projects\App4\App4\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+D:\other-projects\App4\App4\obj\Debug\App4.dll.mdb
+D:\other-projects\App4\App4\bin\Debug\App4.dll.mdb

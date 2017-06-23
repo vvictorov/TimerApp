@@ -40,25 +40,18 @@ namespace App4
 
         private void Initialize()
         {
-            paintCircle.SetStyle(Paint.Style.Stroke);
-            RectF rectF = new RectF(20, 20, 580, 580);
-            paintCircle.AntiAlias = true;
-            paintCircle.Color = Color.Rgb(124, 249, 0);
-            paintCircle.StrokeWidth = 10;
             
-            this.rectF = rectF;
-
-            paintText.SetStyle(Paint.Style.FillAndStroke);
-            paintText.StrokeWidth = 1;
-            paintText.TextSize = 150;
-            paintText.AntiAlias = true;
-            paintText.SetTypeface(Typeface.Create("Arial",TypefaceStyle.Italic));
-            paintText.Color = Color.Rgb(124, 249, 0);
         }
 
         public void ChangeSweepAngle(float angle)
         {
             this.sweepAngle = angle ;
+        }
+
+        private int ConvertPixelsToDp(float pixelValue)
+        {
+            var dp = (int)((pixelValue) / Resources.DisplayMetrics.Density);
+            return dp;
         }
 
         public void SetTime(int seconds)
@@ -70,8 +63,27 @@ namespace App4
 
         protected override void OnDraw(Canvas canvas)
         {
+            var metrics = Resources.DisplayMetrics;
+            var widthInDp = ConvertPixelsToDp(metrics.WidthPixels);
+            var heightInDp = ConvertPixelsToDp(metrics.HeightPixels);
+            paintCircle.SetStyle(Paint.Style.Stroke);
+            RectF rectF = new RectF(20, 20, this.Width-20, this.Width-20);
+            paintCircle.AntiAlias = true;
+            paintCircle.Color = Color.Rgb(124, 249, 0);
+            paintCircle.StrokeWidth = 10;
+
+            this.rectF = rectF;
+
+            paintText.SetStyle(Paint.Style.FillAndStroke);
+            paintText.StrokeWidth = 1;
+            paintText.TextSize = this.Width / 4;
+            paintText.AntiAlias = true;
+            paintText.SetTypeface(Typeface.Create("Arial", TypefaceStyle.Italic));
+            paintText.Color = Color.Rgb(124, 249, 0);
+            paintText.TextAlign = Paint.Align.Center;
+
             canvas.DrawArc(this.rectF, 270, - this.sweepAngle, false, this.paintCircle);
-            canvas.DrawText(TimeString, 125, 345, this.paintText);
+            canvas.DrawText(TimeString, this.Width/2, this.Height/2 + 50, this.paintText);
         }
     }
 }

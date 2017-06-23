@@ -4,18 +4,20 @@ using Android.OS;
 using System.Timers;
 using System;
 using Android.Views;
+using Android.Content.PM;
 
 namespace App4
 {
-    [Activity(Label = "App4", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Fitness Timer", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
+    ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : Activity
     {
         protected float sweepAngle = 360f;
         protected CircularProgressBar progressBarView;
         protected int timeSeconds;
         protected int currentSeconds;
+        protected int timerCounter = 0;
         protected Timer CountDownTimer = new Timer(10);
-        protected Timer SecondsTimer = new Timer(1000);
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -55,18 +57,15 @@ namespace App4
             CountDownTimer.AutoReset = true;
             CountDownTimer.Enabled = true;
             CountDownTimer.Start();
-            SecondsTimer.Elapsed += OnSecondsChanged;
-            SecondsTimer.AutoReset = true;
-            SecondsTimer.Enabled = true;
-            SecondsTimer.Start();
+          
         }
 
         protected void StopCountdown()
         {
             CountDownTimer.Stop();
-            SecondsTimer.Stop();
+            
             CountDownTimer.Elapsed -= OnTimedEvent;
-            SecondsTimer.Elapsed -= OnSecondsChanged;
+            
             sweepAngle = 360f;
             RunOnUiThread(() =>
             {
@@ -79,25 +78,23 @@ namespace App4
         {
             if(sweepAngle > 0)
             {
+                timerCounter++;
                 sweepAngle = sweepAngle - (360f/((float)timeSeconds*100));
                 RunOnUiThread(() =>
                 {
                     progressBarView.ChangeSweepAngle(sweepAngle);
                     progressBarView.Invalidate();
                 });
-            }
-        }
-
-        protected void OnSecondsChanged(Object source, ElapsedEventArgs e)
-        {
-            if (currentSeconds > 0)
-            {
-                RunOnUiThread(() =>
+                if(timerCounter % 100 == 0 && currentSeconds > 0)
                 {
-                    progressBarView.SetTime(currentSeconds);
-                    progressBarView.Invalidate();
-                });
-                currentSeconds--;
+                    RunOnUiThread(() =>
+                    {
+                        progressBarView.SetTime(currentSeconds);
+                        progressBarView.Invalidate();
+                    });
+                    currentSeconds--;
+                }
+
             }
         }
     }
