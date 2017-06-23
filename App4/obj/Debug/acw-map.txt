@@ -1,0 +1,8 @@
+App4.CircularProgressBar, App4;md5066ac93f51537d81d5a988e03c6f5a22.CircularProgressBar
+App4.CircularProgressBar, App4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5066ac93f51537d81d5a988e03c6f5a22.CircularProgressBar
+App4.CircularProgressBar;md5066ac93f51537d81d5a988e03c6f5a22.CircularProgressBar
+app4.CircularProgressBar;md5066ac93f51537d81d5a988e03c6f5a22.CircularProgressBar
+App4.MainActivity, App4;md5066ac93f51537d81d5a988e03c6f5a22.MainActivity
+App4.MainActivity, App4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5066ac93f51537d81d5a988e03c6f5a22.MainActivity
+App4.MainActivity;md5066ac93f51537d81d5a988e03c6f5a22.MainActivity
+app4.MainActivity;md5066ac93f51537d81d5a988e03c6f5a22.MainActivity
